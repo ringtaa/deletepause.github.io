@@ -43,3 +43,8 @@ while true do
     end
     wait(1) -- Check every second
 end
+
+
+game:GetService("RunService").Heartbeat:Connect(function()
+sethiddenproperty(game:GetService("Players").LocalPlayer, "GameplayPaused", false)
+end)
